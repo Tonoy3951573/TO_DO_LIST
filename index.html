@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contanier">
+        <div class="name">Project DOOM</div>
+        
+        <div class="body">
+            <ul class="task-list">
+                <!-- Task items will be appended here -->
+            </ul>
+            <p class="empty-message">No tasks available</p>
+        </div>
+        
+        <div class="input">
+            <span class="hwbutton"><button id="hw" class="tool-btn"><img src="hw.png" alt="hand writing" width="25px"></button></span>
+            <input type="text" class="text" placeholder="Enter your task"> 
+            <span class="button"><button class="adbtn">Add</button></span>
+        </div>
+    </div>
+
+    <!-- Drawing Popup -->
+    <div class="drawing-popup">
+        <div class="drawing-content">
+           <span class="pht"> Draw Here </span><br>
+            <canvas id="drawingCanvas" width="390" height="290"></canvas>
+            <div class="tool-buttons">
+                <button class="pencil-btn">Pencil</button>
+                <button class="eraser-btn">Eraser</button>
+                <button class="reset-btn">Reset</button>
+                <button class="submit-btn">Submit</button>
+                <button class="close1-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
